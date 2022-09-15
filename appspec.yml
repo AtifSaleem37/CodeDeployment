@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: ./CICD.txt
-    destination: /
+    destination: /home/ec2-user/textfile
 hooks:
    ApplicationStop:
      - location: /
