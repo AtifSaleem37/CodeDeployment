@@ -3,3 +3,8 @@ os: linux
 files:
   - source: ./CICD.txt
     destination: /
+hooks:
+   ApplicationStop:
+     - location: /
+       timeout: 5
+       runas: ec2-user
