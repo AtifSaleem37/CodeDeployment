@@ -5,10 +5,9 @@ files:
     destination: /home/ec2-user/nodejs
 hooks:
   BeforeInstall:
-    - location: scripts/before_install.sh
+    - location: scripts/downloadnvm.sh
       timeout: 300
       runas: ec2-user
-  AfterInstall:
-    - location: scripts/after_install.sh
+    - location: scripts/node_install.sh
       timeout: 300
       runas: ec2-user
