@@ -11,3 +11,4 @@ hooks:
     - location: scripts/node_install.sh
       timeout: 300
       runas: ec2-user
+#Mission Successful
