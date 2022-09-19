@@ -1,6 +1,4 @@
 #!/bin/bash
 
-mkdir /home/ubuntu/nodejs
-cd /home/ubuntu/nodejs
 
-sudo npm install
+sudo nvm install 16.13.2
