@@ -1,3 +1,0 @@
-Hey!
-This is Atif trying to implement CICD
-Having issues while doing this
