@@ -5,6 +5,6 @@ files:
     destination: /home/ec2-user/App
 hooks:
   BeforeInstall:
-    - location: scripts/gitandDockerInstallation.sh
+    - location: scripts/gitandDocker.sh
       timeout: 300
       runas: ec2-user
