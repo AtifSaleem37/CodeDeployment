@@ -1,0 +1,11 @@
+version: 0.2
+phases: 
+  pre_build:
+    commands:
+      - docker login -u atisaleem37 -p Technowis@123
+      - cd /home/ec2-user/App
+      - docker build -t custodianapp .
+  build:
+    commands:
+      - docker tag custodianapp:latest 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
+      - docker push 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
