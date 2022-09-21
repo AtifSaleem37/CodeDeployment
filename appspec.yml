@@ -2,13 +2,9 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /home/ec2-user/nodejs
+    destination: /home/ec2-user/App
 hooks:
   BeforeInstall:
-    - location: scripts/downloadnvm.sh
+    - location: scripts/gitandDockerInstallation.sh
       timeout: 300
       runas: ec2-user
-    - location: scripts/node_install.sh
-      timeout: 300
-      runas: ec2-user
-#Mission Successful
