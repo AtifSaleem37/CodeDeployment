@@ -2,10 +2,10 @@ version: 0.1
 phases: 
   pre_build:
     commands:
-      - cd App
-      - docker build -t custodianapp .
+      cd App
   build:
     commands:
+      - docker build -t custodianapp .
       - docker tag custodianapp:latest 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
       - docker push 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
       #firstCommit
