@@ -2,7 +2,7 @@ version: 0.2
 phases: 
   pre_build:
     commands:
-      - cd /home/ec2-user/App
+      - cd App
       - docker build -t custodianapp .
   build:
     commands:
