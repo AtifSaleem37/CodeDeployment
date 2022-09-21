@@ -9,3 +9,4 @@ phases:
     commands:
       - docker tag custodianapp:latest 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
       - docker push 054011781552.dkr.ecr.us-west-2.amazonaws.com/custodianapp
+      #firstCommit
