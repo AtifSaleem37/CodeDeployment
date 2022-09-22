@@ -17,6 +17,6 @@ RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh && \
 
  RUN service apache2 restart
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD /root/run_apache.sh
